@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Button} from 'react-bootstrap';
 import Products from './Products';
+import Rating from './Rating';
 
 
 class App extends Component {
@@ -9,9 +10,11 @@ class App extends Component {
 
     return (
       <div>
-          <h1>First App</h1>
-          <Products />
-          <Button bsStyle="primary" disabled={!isValid}>default</Button>
+        <Rating rating="1" />
+        <Rating rating="2" />
+        <Rating rating="3" />
+        <Rating rating="4" />
+        <Rating rating="5" />
       </div>
     );
   }
