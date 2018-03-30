@@ -35,7 +35,8 @@ class Products extends Component {
           description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor, tellus laoreet venenatis facilisis, enim ex faucibus nulla, id rutrum ligula purus sit amet mauris. ",        
           rating: 5,
           numOfReviews: 2
-      }];
+      }
+    ];
   }    
     
   render() {    
@@ -45,7 +46,11 @@ class Products extends Component {
 
     return (
       <div>
-        <ul>{listProducts}</ul>     
+        {listProducts.length > 0 ? (
+        <ul>{listProducts}</ul>  
+        ) : ( 
+        <ul>No Products to display</ul>   
+        )} 
       </div>
     );
   }
