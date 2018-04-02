@@ -158,9 +158,9 @@ class UserForm extends Component {
         <FormGroup controlId="formControlsSelect">
             <ControlLabel>Select Role</ControlLabel>
             <FormControl componentClass="select" placeholder="select" name="role">                              
-              <option value="select">select</option>
+              <option value="select">select a role</option>
               {listRoles}
-              <option value="other">...</option>
+              <option value="other">Other</option>
             </FormControl>
         </FormGroup>            
         <Button type="submit" disabled={!isEnabled}>
@@ -168,7 +168,7 @@ class UserForm extends Component {
         </Button>    
         { this.state.errorLogin &&             
             <Alert bsStyle="danger">
-              <strong>Error</strong>Username or password is invalid.
+              <strong>Error</strong> Username or password is invalid.
             </Alert>            
         }                   
       </form>
