@@ -23,7 +23,7 @@ class Header extends Component {
     return (      
         <BrowserRouter>
           <div> 
-            <Navbar>
+            {/* <Navbar>
               <Navbar.Header>
                   <Navbar.Brand>
                   </Navbar.Brand>
@@ -33,7 +33,7 @@ class Header extends Component {
                 <NavItem><Link to="/github">GitHub API</Link></NavItem>
                 <NavItem><Link to="/new">New</Link></NavItem>
               </Nav>
-            </Navbar>                              
+            </Navbar>                               */}
             <Switch>   
               <Route path="/github/user/:login/:score" component={GitHubUser} />                                      */}
               <Route path="/github" component={GitHub} />              

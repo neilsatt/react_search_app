@@ -58,6 +58,7 @@ class GitHub extends Component {
         return (
           <div> 
             <br />  
+            <h5>Enter a username to see the results. Click on a username in the results for more information.</h5> 
             <Form inline onSubmit={this.handleSubmit}>
                 <FormGroup controlId="formInlineName">                                    
                     <FormControl 
@@ -72,7 +73,7 @@ class GitHub extends Component {
                     Search
                 </Button>
             </Form>                 
-            <h3>GitHub Users Results</h3>
+            <h3>GitHub Users Results:</h3>
             { this.state.isLoading &&                                             
                 <ReactLoading type="spinningBubbles" color="#444" /> 
             }                               
